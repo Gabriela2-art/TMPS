@@ -4,18 +4,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class SingleResponsibilityPrinciple {
-    public static void main(String[] args) {
-        BookCatalog catalog = new BookCatalog();
-        catalog.addBook(new Book("Throne of Glass", "Sarah J. Maas",
-                new BigDecimal("20.00"), "Fantasy"));
-        catalog.addBook(new Book("The Sixth Faction", "Veronica Roth",
-                new BigDecimal("22.00"), "Dystopian"));
-
-        BookDisplay display = new BookDisplay();
-        for (Book book : catalog.getBooks()) {
-            display.displayBook(book);
-        }
-    }
 }
 
 // SRP: Book holds valid book data; it does not manage a catalog or print output.
