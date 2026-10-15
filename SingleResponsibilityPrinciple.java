@@ -4,6 +4,18 @@ import java.util.Collections;
 import java.util.List;
 
 public class SingleResponsibilityPrinciple {
+
+    public void demonstrate(Book firstBook, Book secondBook) {
+        BookCatalog catalog = new BookCatalog();
+        catalog.addBook(firstBook);
+        catalog.addBook(secondBook);
+
+        BookDisplay display = new BookDisplay();
+
+        for (Book book : catalog.getBooks()) {
+            display.displayBook(book);
+        }
+    }
 }
 
 // SRP: Book holds valid book data; it does not manage a catalog or print output.

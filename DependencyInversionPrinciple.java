@@ -1,4 +1,4 @@
-// This high-level service handles book purchase notifications.
+// This service handles book purchase notifications.
 public class DependencyInversionPrinciple {
     private final NotificationService notificationService;
 
@@ -23,7 +23,7 @@ public class DependencyInversionPrinciple {
     }
 }
 
-// DIP: Both the high-level service and delivery implementations use this contract.
+// DIP: Both the service and delivery implementations use this contract.
 interface NotificationService {
     void sendNotification(String recipient, String message);
 }

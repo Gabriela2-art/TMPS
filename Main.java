@@ -8,19 +8,15 @@ public class Main {
                 new BigDecimal("22.00"), "Dystopian");
 
         System.out.println("=== Single Responsibility Principle ===");
-        BookCatalog catalog = new BookCatalog();
-        catalog.addBook(throneOfGlass);
-        catalog.addBook(theSixthFaction);
-
-        BookDisplay display = new BookDisplay();
-        for (Book book : catalog.getBooks()) {
-            display.displayBook(book);
-        }
+        SingleResponsibilityPrinciple srp =
+                new SingleResponsibilityPrinciple();
+        srp.demonstrate(throneOfGlass, theSixthFaction);
 
         System.out.println("=== Open/Closed Principle ===");
         OpenClosedPrinciple discountCalculator = new OpenClosedPrinciple();
         DiscountStrategy noDiscount = new NoDiscount();
         DiscountStrategy studentDiscount = new StudentDiscount();
+
         System.out.println("Book: " + throneOfGlass.getTitle());
         System.out.println("NoDiscount price: "
                 + discountCalculator.calculateDiscountedPrice(throneOfGlass, noDiscount).toPlainString());
@@ -31,9 +27,13 @@ public class Main {
         System.out.println("=== Dependency Inversion Principle ===");
         NotificationService emailNotification = new EmailNotification();
         NotificationService smsNotification = new SMSNotification();
-        DependencyInversionPrinciple emailService = new DependencyInversionPrinciple(emailNotification);
-        DependencyInversionPrinciple smsService = new DependencyInversionPrinciple(smsNotification);
+
+        DependencyInversionPrinciple emailService =
+                new DependencyInversionPrinciple(emailNotification);
+        DependencyInversionPrinciple smsService =
+                new DependencyInversionPrinciple(smsNotification);
+
         emailService.notifyBookPurchased("reader@example.com", throneOfGlass);
-        smsService.notifyBookPurchased("+37360000000", throneOfGlass);
+        smsService.notifyBookPurchased("+37360000000", theSixthFaction);
     }
 }
