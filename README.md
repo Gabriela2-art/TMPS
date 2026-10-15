@@ -33,7 +33,7 @@ In this laboratory work, three of these principles (SRP, OCP and DIP) are applie
 **Single Responsibility Principle**
 
 * The SRP part is split into three classes, each with a single responsibility. The Book class only holds and validates book data (title, author, price, category). The BookCatalog class manages the collection of books and exposes it as an unmodifiable list, so it cannot be changed from outside. The BookDisplay class is responsible only for printing a book to the console. In this way, a change in the output format affects only BookDisplay, while a change in how books are stored affects only BookCatalog.
-```
+```java
 class BookCatalog {
     private final List<Book> books = new ArrayList<>();
 
@@ -62,7 +62,7 @@ class BookDisplay {
 **Open/Closed Principle**
 
 * The OCP part defines the DiscountStrategy interface with a single method applyDiscount(). Each type of discount is a separate class implementing this interface: NoDiscount returns the original price, while StudentDiscount applies a 10% reduction. The OpenClosedPrinciple class calculates the final price using any strategy it receives, without knowing which concrete discount is used. To add a new discount type, it is enough to create a new class implementing DiscountStrategy, without modifying the existing calculator. BigDecimal is used for prices to avoid floating-point rounding errors.
-```
+```java
 interface DiscountStrategy {
     BigDecimal applyDiscount(BigDecimal price);
 }
@@ -84,7 +84,7 @@ public BigDecimal calculateDiscountedPrice(Book book, DiscountStrategy strategy)
 **Dependency Inversion Principle**
 
 * The DIP part introduces the NotificationService interface, which defines the contract for sending a message. The high-level class DependencyInversionPrinciple, which builds the purchase confirmation message, does not create a concrete notification object; instead, it receives a NotificationService through its constructor. The low-level classes EmailNotification and SMSNotification implement the same interface, and in this laboratory the delivery is simulated in the console. As a result, the service can switch between email and SMS (or any future channel) without any change in its code.
-```
+```java
 interface NotificationService {
     void sendNotification(String recipient, String message);
 }
@@ -106,7 +106,7 @@ public void notifyBookPurchased(String recipient, Book book) {
 **Main class**
 
 * The Main class demonstrates all three principles. It creates two books, displays them through the SRP classes, calculates the price of a book with and without the student discount, and then sends purchase notifications using two services configured with different notification implementations (email and SMS).
-```
+```java
 public static void main(String[] args) {
     Book throneOfGlass = new Book("Throne of Glass", "Sarah J. Maas",
             new BigDecimal("20.00"), "Fantasy");
@@ -128,6 +128,8 @@ In the second section, the price of "Throne of Glass" is calculated with two dif
 In the third section, the same service class sends one notification by email and another by SMS, depending only on the implementation passed to its constructor.
 
 A screenshot of the console output is provided below.
+
+<img width="951" height="451" alt="image" src="https://github.com/user-attachments/assets/af16e6d5-4781-4dd7-a77c-fdd774efceca" />
 
 
 
