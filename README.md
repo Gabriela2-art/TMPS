@@ -143,7 +143,8 @@ The Factory Method demonstration creates two separate factories, `EmailNotificat
 
 The application displays the results after the user selects Lab 1 from the console menu. The menu also allows Lab 0 to be executed independently, so the output of the selected laboratory is shown without automatically running both laboratories in sequence.
 
-![Console output](screenshots/output.png)
+<img width="492" height="373" alt="image" src="https://github.com/user-attachments/assets/ea24df0c-6f27-496b-817a-d613f8cea4b4" />
+
 
 ## Conclusions
 
