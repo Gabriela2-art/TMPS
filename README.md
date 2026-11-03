@@ -139,19 +139,21 @@ smsFactory.confirmPurchase("+37360000000", theSixthFaction);
 
 The diagram illustrates the `BookCatalog` Singleton, including its private constructor, shared `INSTANCE` field and `getInstance()` access method.
 
-<!-- Attach the Singleton UML diagram here. -->
+<img width="2352" height="564" alt="singleton_diagram (2)" src="https://github.com/user-attachments/assets/9576a5fc-6cb9-4599-b2af-6719e3a9af76" />
+
 
 ### Factory Method Pattern
 
 The diagram illustrates the relationship between the abstract `NotificationFactory`, its concrete factory subclasses and the notification services they create.
 
-<!-- Attach the Factory Method UML diagram here. -->
+<img width="2352" height="2139" alt="factory_diagram (2)" src="https://github.com/user-attachments/assets/c669689a-6de7-469c-a5cf-d8d63fbd62a1" />
 
 ### Builder Pattern
 
 The diagram illustrates how `BookBuilder` incrementally configures and creates a validated `Book` object.
 
-<!-- Attach the Builder UML diagram here. -->
+<img width="2352" height="579" alt="builder_diagram (4)" src="https://github.com/user-attachments/assets/7c9a7dd2-b870-4e3e-bf59-9b577cfa8c43" />
+
 
 ## Results
 
