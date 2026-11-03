@@ -133,6 +133,26 @@ emailFactory.confirmPurchase("reader@example.com", throneOfGlass);
 smsFactory.confirmPurchase("+37360000000", theSixthFaction);
 ```
 
+## UML Diagrams
+
+### Singleton Pattern
+
+The diagram illustrates the `BookCatalog` Singleton, including its private constructor, shared `INSTANCE` field and `getInstance()` access method.
+
+<!-- Attach the Singleton UML diagram here. -->
+
+### Factory Method Pattern
+
+The diagram illustrates the relationship between the abstract `NotificationFactory`, its concrete factory subclasses and the notification services they create.
+
+<!-- Attach the Factory Method UML diagram here. -->
+
+### Builder Pattern
+
+The diagram illustrates how `BookBuilder` incrementally configures and creates a validated `Book` object.
+
+<!-- Attach the Builder UML diagram here. -->
+
 ## Results
 
 The Singleton demonstration creates two references by calling `BookCatalog.getInstance()` twice. The console output confirms that both references point to the same instance through the expression `catalogA == catalogB`, which produces `true`. The application also reads the collection through the second reference, demonstrating that both references access one coordinated catalog object.
