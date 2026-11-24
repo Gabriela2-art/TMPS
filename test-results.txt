@@ -1,0 +1,7 @@
+PASS decoratorsStackInEitherOrder
+PASS decoratorsPreserveBaseAndAddDescription
+PASS proxyBlocksUnauthorizedWithoutSideEffects
+PASS proxyDelegatesAuthorized
+PASS facadeAppliesExtrasBeforePurchase
+PASS facadeProxyIntegrationWithoutExtras
+6 tests passed.

@@ -1,0 +1,68 @@
+
+Alege laboratorul pe care vrei sa il rulezi:
+0 - Laboratorul 0 (principii SOLID)
+1 - Laboratorul 1 (design patterns creationale)
+2 - Laboratorul 2 (design patterns structurale)
+3 - Iesire
+Optiunea: === Lab 0: Single Responsibility Principle ===
+Title: Throne of Glass
+Author: Sarah J. Maas
+Price: 20.00
+Category: Fantasy
+
+Title: The Sixth Faction
+Author: Veronica Roth
+Price: 22.00
+Category: Dystopian
+
+=== Lab 0: Open/Closed Principle ===
+Book: Throne of Glass
+NoDiscount price: 20.00
+StudentDiscount price (10% off): 18.00
+
+=== Lab 0: Dependency Inversion Principle ===
+Email to reader@example.com: Your purchase of "Throne of Glass" by Sarah J. Maas is confirmed.
+SMS to +37360000000: Your purchase of "The Sixth Faction" by Veronica Roth is confirmed.
+
+
+Alege laboratorul pe care vrei sa il rulezi:
+0 - Laboratorul 0 (principii SOLID)
+1 - Laboratorul 1 (design patterns creationale)
+2 - Laboratorul 2 (design patterns structurale)
+3 - Iesire
+Optiunea: === Lab 1: Singleton ===
+Same catalog instance: true
+Books in shared catalog: 2
+
+=== Lab 1: Builder ===
+Title: Throne of Glass
+Author: Sarah J. Maas
+Price: 20.00
+Category: Fantasy
+
+Title: A New Arrival
+Author: Example Author
+Price: 0.00
+Category: Fiction
+
+=== Lab 1: Factory Method ===
+Email to reader@example.com: Your purchase of "Throne of Glass" by Sarah J. Maas is confirmed.
+SMS to +37360000000: Your purchase of "The Sixth Faction" by Veronica Roth is confirmed.
+
+Alege laboratorul pe care vrei sa il rulezi:
+0 - Laboratorul 0 (principii SOLID)
+1 - Laboratorul 1 (design patterns creationale)
+2 - Laboratorul 2 (design patterns structurale)
+3 - Iesire
+Optiunea: === Lab 2: Structural Design Patterns ===
+Book: 20.00 | Student discount: 10% | Gift wrap: 2.00 | Bookmark: 1.00
+Email to reader@example.com: Purchase confirmed: Throne of Glass + gift wrap + bookmark; total: 21.00
+Final total: 21.00
+Purchase denied: unauthorized customer.
+
+Alege laboratorul pe care vrei sa il rulezi:
+0 - Laboratorul 0 (principii SOLID)
+1 - Laboratorul 1 (design patterns creationale)
+2 - Laboratorul 2 (design patterns structurale)
+3 - Iesire
+Optiunea: Programul s-a incheiat.
